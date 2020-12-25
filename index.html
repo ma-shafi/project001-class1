@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New WebSite Layout</title>
+    <style>
+        body{
+            font-family:arial,helvetica;
+            background-color:slategrey;
+            margin:0; padding:0;
+        }
+        #wrapper{
+            border:1px solid black;
+            margin: 0 auto;
+            background-color:white;
+            width:1000px;
+        }
+        #header{
+            background-color:crimson;
+            height:100px;
+            color:white;
+            font-weight:bold;
+            margin:0;
+            padding:0;
+        }
+        #header h1{
+            font-size:40px;
+            font-weight:bold;
+            padding: 15px 0 0 15px;
+            margin:0;
+        }
+        #menu{
+            background-color:salmon;
+            height:40px;
+        }
+        #menu li{
+            display: inline-block;
+            padding: 10px 15px;
+        }
+        #menu li a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+        }
+        #menu li a:hover{
+            color:white;
+            background:crimson;
+        }
+        #content{
+            box-sizing: border-box;
+            width:800px;
+            padding:15px 15px;           text-align:justify;
+            float:left;
+            min-height:200px;
+        }
+        #sidebar{
+            background-color:skyblue;
+            width:200px;
+            min-height:430px;
+            float:right;
+        }
+        #sidebar li{
+            padding: 5px 0 0 20px;
+            margin:0;
+            list-style:inside;
+            display:block;
+        }
+        #sidebar li a{
+            text-decoration:none;
+            color:black;
+            font-weight:bold;
+            }
+        #sidebar li a:hover{
+            color:white;
+            background:crimson;
+        }
+        #footer{
+            background-color:salmon;
+            clear:both;
+            text-align:right;
+            font-weight:bold;
+            padding:5px 10px 0 0;
+        }
+
+        /*here we are writing media queries*/
+        @media screen and (max-width:1020px){
+            #wrapper{
+                width:800px;
+            }
+            #content{
+                width:80%;
+            }
+            #sidebar{
+                width:18%;
+            }
+        }
+        @media screen and (max-width:810px){
+            #wrapper{
+                width:500px;
+            }
+            #content{
+                width:70%;
+             }
+            #sidebar{
+                width:30%;
+             }
+
+        }
+        @media screen and (max-width:510px){
+            #wrapper{
+                width:auto;
+            }
+            #content{
+                width:100%;
+                float:none;
+            }
+            #sidebar{
+                width:100%;
+                float:none;
+            }
+            #header h1{
+            font-size:30px;
+            font-weight:bold;
+            padding: 15px 0 0 0;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="abc" style="border: 1px solid red;" onClick= "xyz()">
+        <h1>MY NEW WEBSITE</h1>
+    </div>
+            <div id="menu">
+                <ul class="list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About US</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+            </div>
+
+        <div id="content">
+            <h2>Design Basic Layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis cum placeat magnam suscipit possimus! Veniam dolore quo doloribus odio et quam illum alias. Vel facilis assumenda minus aliquam animi repellat, porro itaque. Et ex quidem maiores. Nostrum accusantium aliquid officia at, reiciendis voluptatem fugiat in eaque quisquam architecto earum eos repellat tenetur ipsa doloremque optio libero dolor praesentium ut totam? Delectus atque quaerat quod et in, sapiente recusandae a laborum quis illum consequatur corporis accusamus dolore, nostrum saepe velit aliquam. Sapiente, delectus? Ad in ratione libero, placeat, nobis repellendus fugit porro quod explicabo aperiam quam, culpa voluptate ut sequi?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ab, minus nemo voluptas porro modi provident non suscipit unde at quo a ullam? Accusamus explicabo ratione quibusdam aliquid ducimus provident commodi incidunt asperiores officia laborum culpa consequatur temporibus nulla, hic, praesentium aliquam corrupti possimus fuga doloremque odio tempore rerum? Quasi dolorem nulla quidem eveniet. Quibusdam, quam adipisci placeat officia cupiditate numquam animi unde commodi tempora libero aliquid, quidem aperiam laboriosam reprehenderit, error beatae minus voluptates autem accusantium fugiat consequatur sit. Ullam laboriosam vero maiores quisquam, nulla ea. Facere ad corporis aspernatur qui rem, tempore, vel laboriosam, facilis dolorem recusandae alias!</p>
+        </div>
+        <div id="sidebar" class="list"())>
+                <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About US</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+                </ul>
+        </div>
+        <div id="footer">mashafi@2020</div>
+
+    </div>
+     
+</body>
+</html>

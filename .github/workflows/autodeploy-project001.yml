@@ -35,5 +35,5 @@ jobs:
            
        # Now to deploy website directly 
       - name: deploying using surge
-        run: surge ./ website001.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ project-sample1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 
